@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+    padding: 10px 30px;
 }
 .hero::after{
     content: "";
@@ -51,10 +52,10 @@
 
 
     background: var(--bg);
-    width: 50%;
+    width: 60%;
 }
 .hero .text{
-    flex-basis: 60%;
+    flex-basis: 55%;
 } 
 
 .hero h1{
@@ -62,51 +63,72 @@
     font-weight: 700;
     margin-bottom: 20px;
     /* color: var(--bg); */
-    line-height: 1.2;
-    letter-spacing: -3.5px;
+    line-height: 1.4;
+
+    letter-spacing: -4px;
     top: 20vh;
 }
 .hero p{
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -0.5px;
+    line-height: 1.4;
     color: var(--main);
     top: 22vh;
 }
 .hero .heroimg{
-    flex-basis: 40%;
+    flex-basis: 45%;
     
  
 }
 .heroimg img{
-    width: 180%;
+    width: 120%;
+    max-width: 600px;
     height: inherit;
     object-fit: contain;
     object-position: center;
     border-top-left-radius:20px ;
+    border-radius: 20px;
     border-left: 10px dotted var(--main);
+    border-top: 10px dotted var(--main);
 }
-@media screen and  (min-width: 1630px) and (max-width: 1700px) {
+.hero button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--accent);
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.hero button:hover{
+    background-color: var(--accent);
+    color: var(--main);
+}
+/* @media screen and  (min-width: 1630px) and (max-width: 1700px) {
 
     .heroimg img{
-        width: 220%;
+        width: 100%;
         height: auto;
     }
 }
 @media screen and  (min-width: 1300px) and (max-width: 1630px) {
 
     .heroimg img{
-        width: 186%;
+        width: 100%;
         height: auto;
     }
 }
 @media screen and  (min-width: 1000px) and (max-width: 1300px) {
 
     .heroimg img{
-        width: 230%;
+        width: 100%;
         height: auto;
     }
-}
+} */
 @media (max-width: 1000px) {
     .hero{
         flex-direction: column;
@@ -130,8 +152,20 @@
     }
     .heroimg img{
         width: 100%;
-        height: 50vh;
+        
         border-right: 10px dotted var(--main);
+    }
+    .hero::after{
+        content: "";
+        position: absolute;
+        height:7vh;
+        right: 0;
+        bottom: 0;
+        transform:rotate(180deg);
+
+
+        background: var(--bg);
+        width: 60%;
     }
 }
 
@@ -158,7 +192,7 @@
     }
     .heroimg img{
         width: 100%;
-        height: 40vh;
+        
         border-right: 10px dotted var(--main);
     }
 }
