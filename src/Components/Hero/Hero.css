@@ -39,7 +39,8 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-top: 4vh;
+    margin-bottom: 20px;
     padding: 10px 30px;
 }
 .hero::after{
