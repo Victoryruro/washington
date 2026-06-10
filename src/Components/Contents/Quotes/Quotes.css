@@ -1,0 +1,77 @@
+.quotes {
+  background-color: #0A2540;
+  color: white;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.quotes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-header h2 {
+  color: #D4B88A;
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-bar {
+  width: 130px;
+  height: 4px;
+  background-color: #D4B88A;
+  margin: 15px auto;
+}
+
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  row-gap: 15px;
+}
+
+.quote-card {
+  background-color: var(--main);
+  padding: 40px 35px;
+  border-radius: 12px;
+  border: 1px solid var(--accent);
+  transition: all 0.4s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.quote-icon {
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.quote-author {
+  color: var(--bg);
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quote-card {
+    padding: 30px 25px;
+  }
+}
