@@ -1,0 +1,81 @@
+.career-page {
+  background-color: #F8F4EB;
+}
+
+.career-hero {
+  background-color: #0A2540;
+  color: white;
+  text-align: center;
+  padding: 140px 20px 100px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 12px;
+  color: #D4B88A;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+/* Section Styling */
+.career-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.section-image img {
+  width: 100%;
+  border-radius: 12px;
+  
+}
+
+.section-text h2 {
+  color: #0A2540;
+  font-size: 2.4rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 12px;
+}
+
+.section-text h3 {
+  color: #D4B88A;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.section-text p {
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: #1F2529;
+  margin-bottom: 20px;
+}
+
+/* Reverse layout for second section */
+.reverse .section-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .section-grid,
+  .reverse .section-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .career-hero {
+    padding: 100px 20px 80px;
+  }
+}

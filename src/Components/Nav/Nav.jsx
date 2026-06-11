@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+
 import './Nav.css'
+import { Link } from 'react-router';
+import EarlyLife from '../EarlyLife/EarlyLife';
 
 const Nav = () => {
   const [open, setOpen] = useState(false)
+
 
   const toggleMenu = () => setOpen((prev) => !prev)
   const closeMenu = () => setOpen(false)
@@ -24,19 +28,19 @@ const Nav = () => {
       </button>
       <ul className={`nav-links ${open ? 'active' : ''}`}>
         <li>
-          <a href="#" onClick={closeMenu}>Home</a>
+          <Link to="/" onClick={closeMenu}>Home</Link>
         </li>
         <li>
-          <a href="#Early-Age" onClick={closeMenu}>Early Age</a>
+          <Link to="/EarlyLife" onClick={closeMenu}>Early Life</Link>
         </li>
         <li>
-          <a href="#Career" onClick={closeMenu}>Career</a>
+          <Link to='/Career'  onClick={closeMenu}>Career</Link>
         </li>
         <li>
-          <a href="#Presidency" onClick={closeMenu}>Presidency</a>
+          <Link  onClick={closeMenu}>Presidency</Link>
         </li>
         <li>
-          <a href="#Legacy" onClick={closeMenu}>Legacy</a>
+          <Link  onClick={closeMenu}>Legacy</Link>
         </li>
         <li className="nav-cta-container" hidden>
           <button className="nav-cta" onClick={closeMenu}>Explore His Legacy</button>
